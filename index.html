@@ -1,127 +1,1014 @@
-<!doctype html>
-<html lang="ru">
+<html>
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Светлая память — Константин Басов</title>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
 <style>
-:root{}
-html,body{height:100%;margin:0;background:linear-gradient(180deg,#0f1724 0%, #071026 60%);font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#fff;}
-.container{max-width:900px;margin:0 auto;padding:24px;box-sizing:border-box;}
-/* Splash fullscreen overlay */
-#splash{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06), rgba(0,0,0,0.6)), linear-gradient(180deg,#000 0%, rgba(10,10,20,0.7) 100%);z-index:40;color:#fff;backdrop-filter: blur(2px);transition:opacity .8s ease,transform .8s ease;}
-#splash.hidden{opacity:0;pointer-events:none;transform:scale(.99);}
-.splash-card{max-width:820px;padding:28px;border-radius:12px;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,0.6);}
-.splash-title{font-size:28px;font-weight:700;letter-spacing:0.02em;margin-bottom:8px;}
-.splash-sub{font-size:18px;opacity:.95;margin-bottom:18px;}
-.splash-note{font-size:14px;color:rgba(255,255,255,0.85);}
-
-/* Flipbook pages */
-.book{position:relative;min-height:60vh;margin-top:24px;display:flex;align-items:center;justify-content:center;perspective:1600px;}
-.slider{width:100%;max-width:900px;height:620px;position:relative;display:flex;align-items:center;justify-content:center;}
-.page{width:100%;height:100%;background:linear-gradient(180deg, #fff 0%, #fbfbfb 100%);border-radius:12px;box-shadow:0 12px 30px rgba(2,6,23,0.45);padding:36px;box-sizing:border-box;position:absolute;top:0;left:0;transform-origin:left center;backface-visibility:hidden;overflow:auto;}
-.page p{margin:0 0 1em 0;line-height:1.5;color:#111;font-size:16px;}
-
-/* stacking and transform for active/previous */
-.page{transform:rotateY(0deg) translateX(0);transition:transform .9s cubic-bezier(.2,.9,.2,1),opacity .45s ease;opacity:1;}
-.page[data-page]:not(.active){opacity:0;pointer-events:none;}
-.page.active{z-index:30;opacity:1;pointer-events:auto;}
-.page.prev{z-index:20;transform:rotateY(-20deg) translateX(-8%);opacity:0.98;}
-
-/* Controls */
-.controls{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:12px;}
-.btn{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600;}
-.meta{color:rgba(255,255,255,0.6);font-size:14px;}
-.counter{font-weight:700;color:#fff;padding:8px 12px;background:rgba(255,255,255,0.06);border-radius:10px;}
-
-/* small screens */
-@media (max-width:720px){ .slider{height:76vh} .splash-card{padding:18px} .splash-title{font-size:22px} }
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Bahnschrift Light Condensed";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;}
+@font-face
+	{font-family:Bahnschrift;
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F4D78;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F4D78;}
+.MsoChpDefault
+	{font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.55pt 2.0cm 42.55pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 14.1pt 2.0cm 21.3pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.55pt 2.0cm 42.55pt;}
+div.WordSection3
+	{page:WordSection3;}
+-->
 </style>
+
 </head>
-<body>
-<div id="splash" aria-hidden="false">
-  <div class="splash-card">
-    <div class="splash-title">Светлая память — Константину Басову</div>
-    <div class="splash-sub">9 сентября 2025 — навсегда в наших сердцах</div>
-    <div class="splash-note">Кликните или нажмите любую клавишу, чтобы перейти к воспоминаниям. Можно пролистывать стрелками ← → или свайпом.</div>
-  </div>
+
+<body lang=en-UA style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle style='margin-bottom:12.0pt'><b><span lang=RU>Воспоминания о
+Коте, Костике, Косте, Константине…                                                                        
+    </span></b><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif'>(
+В переводе с греческого, христианское имя Константин, означает <b>СТОЙКИЙ </b>) 
+       </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><img width=116 height=122
+src="Эпитафия%20Константину%20-%20Личности.fld/image001.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222;background:white'>Полтора месяца назад мы встречались, общались,
+выпивали... как всегда у Кости были планы. Он ими делился, мы обсуждали,
+оценивали, спорили, хохмили... как всегда.... Ушёл друг, соратник, земляк,
+человек! Очень рано...Человек, который всегда имел свое аргументированное
+мнение и позицию и никогда ею, не торговал, не разменивал. Он мог нравиться или
+не нравиться кому-то, но никого не оставлял равнодушным после общения. Человек,
+который понял смысл, цену жизни, любил её бесконечно, хотя для него это была
+очень тяжёлая борьба на пределе человеческих возможностей.</span><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'> <span
+style='background:white'>Никогда не унывал и постоянно строил и реализовывал
+свои планы и проекты... Человек который ценил и держал свое слово, не взирая на
+перипетии жизни. Большой Человек!!!</span>   <span style='background:white'>Помним,
+уважаем, грустим…</span></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><b><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222;
+background:white'>Владимир Мирославович</span></b><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222;
+background:white'> <b>Иванишин </b>– директор (с 2010 по 22г.) ИФ ООО
+«Рос.Нефть-Бурение»    Сейчас директор «РН Бурение», Башкирия  Октябрьский    
+сентябрь       2025г. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;text-align:justify;line-height:
+normal;background:white'><img width=117 height=125
+src="Эпитафия%20Константину%20-%20Личности.fld/image002.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222;background:white'>С Константином Витальевичем познакомились в
+2010г в городе &quot;герое&quot; Усть-Кут. Стояли у истоков становления
+Иркутского филиала РН-Бурение. За 15 лет много было пройдено - взлеты, падения,
+споры, отстаивание интересов, но отношения всегда были искренние, партнерские,
+доверительные. Для меня Костя хороший, надежный, искренний человек способный
+решить любые задачи, грамотно расставить приоритеты, быть в центре любой
+компании…</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222;background:white'>Ренат Хасанович Акчурин - </span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222;
+background:white'>Директор (с 2022 по настоящее время) ИФ ООО
+«Рос.Нефть-Бурение»                         Октябрь</span><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222;
+background:white'>   2025г.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;text-align:justify;line-height:
+normal;background:white'><img width=117 height=97
+src="Эпитафия%20Константину%20-%20Личности.fld/image003.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222;background:white'>Доброго дня Вам уважаемые Виталий Гаврилович,
+Людмила Анатольевна. Мне очень повезло в жизни познакомится и дальнейшем пройти
+вместе с вашим сыном Константином по работе, по жизни. Огромное Вам спасибо за
+сына, специалиста своего дела, товарища и Друга ( с большой буквой). Константин
+навсегда останется в наших сердцах , Еще раз спасибо Вам за сына, здоровья Вам
+и долгих лет жизни.                    Рафаил Ульфатович Сираев Гл. инженер </span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222;
+background:white'>(с 2010 по 18г.) «РН-Бурение»</span><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222;
+background:white'>               </span><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222;background:white'>г. Набережные
+Челны              октябрь 2025г.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm'><img width=309 height=115
+src="Эпитафия%20Константину%20-%20Личности.fld/image004.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;line-height:107%;font-family:
+"Arial",sans-serif'>Я благодарен судьбе, что мне на жизненном пути повстречался
+прекрасный человек Константин Басов. Пусть светлая память о Косте навсегда
+останется с нами!                         Игорь Бурмистров           (Зам.
+директора по производству)                               сентябрь 2025г.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify'><span lang=RU
+style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>Коллеги
+по работе и друзья Константина.    </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify'><span lang=RU
+style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>            Игорь                 
+Олег                   Мирон    </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU style='font-size:
+12.0pt;line-height:107%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU style='font-size:
+12.0pt;line-height:107%;font-family:"Arial",sans-serif'>Честь и хвала родителям,
+воспитавшим такого сына. Константин Витальевич надёжный друг и товарищ, всегда
+готов прийти на помощь. Его оптимизма и жизнерадостности будет нам не
+хватать...Он навсегда в наших сердцах.       Олег Заика (Зам директора по
+режиму)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify'><span lang=RU
+style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif;
+color:#222222'>С Костей познакомился в 2010 году. Вместе ездили на буровые: он-
+гл. энергетик, я - гл. механик. С первых дней общения Костя стал для меня другом,
+а немного позже, родным человеком. Часто ходили друг к другу в гости, постоянно
+общались. Костя строил много разных планов на будущее. Он был искренним,
+честным человеком, всегда приходил на помощь, делал это, от чистого сердца.
+Держал слово, мог разрулить любую ситуацию: производственную, кадровую,
+доставку грузов на буровые,- без дорог, расст. 200-500км</span></p>
+
+<p style='margin:0cm;background:white'><span lang=RU style='font-family:"Arial",sans-serif;
+color:#222222'>Костя безумно любил свою семью, уважал родителей, родственников
+и друзей. Всегда приходил им на помощь. Константин остался в нашей памяти
+Человеком с большой буквы. Вечная память!!!</span></p>
+
+<p style='margin-top:0cm;background:white'><span lang=RU style='font-family:
+"Arial",sans-serif;color:#222222'>                                                                    Мирон
+Жидун   ( Гл. механик )    Октябрь  2025г.     </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><img
+width=122 height=153
+src="Эпитафия%20Константину%20-%20Личности.fld/image005.jpg" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>«<b><i>Добрая память о Вашем сыне, он был украшением Вашего
+Рода, добрым, разумным, работоспособным. очень терпеливым. «Спивчувае уся моя
+родына!</i></b>». <i>(</i>Сочувствуют<b><i> </i></b>все мои родственники!)<b><i>
+    </i></b>Борис     октябрь 2025   г. Киев.    </span></p>
+
+<p class=MsoNoSpacing><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>С Борисом Онищенко я дружу с 1956г. после поступления в ВУЗ. Мы
+были в одной группе и жили в одной комнате, в общежитии. Окончили. Борис остался
+в Киеве, я уехал в Запорожье Мы были интересны друг другу, и дружим до сих пор.
+В1996г, у сына, обнаружили онкологию. Положили в Запорожскую онко-больницу,
+прошел почти год, зав. отделением говорит мне, что не знаю, как лечить дальше.
+Звоню Борису, он говорит: «пусть сын немедленно приезжает, во всем помогу». </span><span
+class=Heading2Char><b><span lang=RU style='font-size:13.0pt;font-family:"Arial",sans-serif;
+color:black'>Лечение было очень тяжелое,</span></b></span><span
+class=Heading2Char><span lang=RU style='font-size:13.0pt;color:black'> </span></span><span
+class=Heading2Char><b><span lang=RU style='font-size:13.0pt;font-family:"Arial",sans-serif;
+color:black'>облучение, химиотерапия</span></b></span><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'> (сложно
+было купить-достать лекарства). Котя остался жив, но с большой потерей
+иммунитета. Главное… продолжал жить!   </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;text-align:justify;line-height:
+normal;background:white'><span lang=EN-US style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'>P</span><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'>.</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'> S</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>.
+Дорогой Борис, твою доброту, отзывчивость и наши чувства благодарности, постараемся
+передать, нашим внукам!            Виталий   Людмила</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'> </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:106.2pt;text-align:justify;line-height:normal;background:white'><img
+width=142 height=159
+src="Эпитафия%20Константину%20-%20Личности.fld/image006.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>Мы познакомились в Китае, Костя и Алена, мой муж и я поселились
+в одном отеле. С того дня прошло 15 лет, мы стали близкими друзьями, с
+родственным уклоном. В моей памяти, Константин останется настоящим Мужчиной,
+отчаянным трудолюбом, а также, любящим сыном и мужем, отличным отцом. У нас
+было много интересных встреч, наполненных позитивом, легкостью и необыкновенной
+атмосферой тепла. Никогда не забуду его неподражаемое чувство юмора и мощный
+интеллект. Его нежное и трепетное отношение к родителям, жене и детям всегда
+вызывало восхищение. Прощай, друг! Ты был лучшим!                                  Виталий
+и Марина Боборыкины.</span></p>
+
+<p class=MsoNormal style='margin-left:318.6pt;text-align:justify;text-indent:
+35.4pt;line-height:normal;background:white'><span lang=RU style='font-size:
+12.0pt;font-family:"Arial",sans-serif;color:#222222'>Октябрь 2025г.  г. Иркутск</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><img width=130 height=182
+src="Эпитафия%20Константину%20-%20Личности.fld/image007.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>С Костей познакомилась я 12.07.2019г. Он вернулся после
+командировки из Японии. Заболел в Японии и все время терпел, старался не
+расслабляться и бодрился. Приехал и сразу отправился в стационар, в реанимацию.
+Костя тонкий парень, боец. Все закончилось благополучно, состояние
+стабилизировалось, жизнь продолжалась!  Были надежды, мечты, желания. Костя
+всегда мечтал, жил, как в последний раз. Никогда не останавливался, не унывал,
+не жаловался. Только вперед, к мечтам.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'>Как-то раз Костя мне сказал: «Я так хочу
+жить, а мое тело не хочет. Почему?» Он с 21 года боролся за свою жизнь. А с
+2019г это была борьба стала еще более жестокой, тяжелой и постоянной, Костя
+светлый, сильный, мужественный человек. Я не видела более таких людей, которые
+так боролись за свою жизнь, как Костя. Мне всегда хотелось назвать его
+Костиком, хотелось сделать для него все возможное и не возможное. Такие люди
+встречаются в жизни… но не всем. С кем бы из врачей, которые соприкасались с
+Костей, я не разговаривала. Все говорили, что такой силы духа, не встречали
+людей. Я хочу, чтобы дети, жена и родители знали, Костя всех очень любил и
+оберегал их покой. Он не хотел расстраивать и пугать родителей, огорчать свою
+любимую жену, тревожить деток. Он был как в сказке, «стойкий оловянный
+солдатик». Костик хотел исполнить свою мечту, сходить на яхте из Крыма в
+Таиланд.  Мы с ним, это путешествие  обсуждали 25 августа 2025 года.  Когда он
+говорил, то светился, был счастлив, от этой большой и светлой своей мечты!                                           Доктор
+Татьяна Копылова.    </span></p>
+
+<p class=MsoNormal style='margin-left:247.8pt;text-align:justify;text-indent:
+35.4pt;line-height:normal;background:white'><span lang=RU style='font-size:
+12.0pt;font-family:"Arial",sans-serif;color:#222222'>24 сентября 2025 г             г.
+Иркутск</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><img
+width=105 height=118
+src="Эпитафия%20Константину%20-%20Личности.fld/image008.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>Костя был человеком, который умел зажигать вокруг себя жизнь. У
+него всегда рождались новые идеи. Самое ценное в нём — это огромная любовь к
+семье. Костя очень любил море и парусники. Они были для него источниками сил и
+радости, именно в море он чувствовал себя по-настоящему счастливым. Для нас он
+останется светлым, искренним человеком.                                                    Евгения
+и Василий.          </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:212.4pt;text-align:justify;text-indent:35.4pt;line-height:normal;
+background:white'><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>Сентябрь 2025 г.      Таиланд      г. Хуа-Хин</span></p>
+
+<p class=MsoNormal style='line-height:normal;background:white'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>P</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>.</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>
+S</span><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>.  Совместный небольшой бизнес.</span></p>
+
+<p class=MsoNormal style='line-height:normal;background:white'><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal;background:white'><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><img
+width=99 height=119 src="Эпитафия%20Константину%20-%20Личности.fld/image009.png"
+align=left hspace=12 alt=Антон><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'>Моё знакомство с Константином,
+началось неожиданно! Мне позвонили и предложили выйти в море половить рыбу, с
+приезжими.<br>
+Рано утром на борт поднялась компания ребят и из них сразу выделялся Костя! Не
+ростом и комплекцией, а своей невообразимой харизмой и умением очень ненавязчиво
+поддержать разговор! У нас очень оказалось много общего, особенно в яхтинге!</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Мы
+с ним несколько раз ещё пересекались в жизни и каждый раз это были душевные и незабываемые
+встречи!!! Константин останется в моей памяти на всегда!!!             </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Капитан
+яхты &quot;DJUNO III&quot;            Антон Нашел         г. Владивосток           сентябрь
+2025 г.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><img
+width=100 height=124
+src="Эпитафия%20Константину%20-%20Личности.fld/image010.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>Костя смотрел на окружающий мир с какой-то другой стороны, с
+другого ракурса. С которого не всем это было дано, это делало его незаурядным
+человеком. Несмотря на то, что занимал руководящую должность, вёл  себя
+достойно, без надменности, высокомерия. Его отношение к жизни и ситуациям было
+нестандартным. Он видел и поступал так, как другие бы и не сообразили. Всегда
+жизнерадостный, не унывающий, веселый.  С далеко идущими планами. Если чем -то
+увлекался, то погружался в это полностью. Охота, рыбалка, море, яхты. Яхты это
+была его мечта. Он был влюблен в них и море. Костя всегда был открытым, веселым
+и правильным мужиком, как он сам говорил: «правильных взглядов».</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:177.0pt;text-align:justify;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Яхтенный
+капитан Тарас.      Крым.      1 октября 2025г.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;line-height:normal;background:white'><img width=117
+height=156 src="Эпитафия%20Константину%20-%20Личности.fld/image011.jpg"
+align=left hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>Мы познакомились с Константином на яхтинге, когда наши дети
+тренировались на юниорских яхтах. Уже потом я узнал, что Костя сам капитан, сам
+строит круизную яхту в Крыму. Море Костя любил -  страстно, ходил по морю при
+каждой возможности. Костя умел зажигать людей своей искренностью,
+целеустремлённостью, оригинальными идеями. На моих глазах задумал и открыл
+бизнес в Хуа-Хине. Экскурсии и отдых на тримаране, по реке и морю. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Душа
+компании, разносторонних способностей и хороший рассказчик. Я слышал от него,
+множество весёлых жизненных историй про его насыщенную событиями жизнь.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Костя
+умел ценить еду, сам очень хорошо готовил, предпочитал простую вкусную кухню. Я
+очень любил, в его приготовлении, шашлыки. Я рад что несколько лет общался с
+Костей, буду его часто вспоминать.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-indent:35.4pt;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Яхтсмен
+- шкипер Евгений     17 сентябрь 2025г г.            г.Хуа-Хин  </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-indent:35.4pt;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
 </div>
 
-<main class="container" role="main">
-  <h1 style="color:#fff;margin:8px 0 6px 0;font-size:20px;">Эпитафия и воспоминания</h1>
-  <div class="book" id="book" aria-live="polite">
-    <div class="slider" id="slider">
-      <div class='page' data-page='1'><p>Воспоминания о Коте, Костике, Косте, Константине…                                                                             ( В переводе с греческого, христианское имя Константин, означает СТОЙКИЙ )</p><p>Полтора месяца назад мы встречались, общались, выпивали... как всегда у Кости были планы. Он ими делился, мы обсуждали, оценивали, спорили, хохмили... как всегда.... Ушёл друг, соратник, земляк, человек! Очень рано...Человек, который всегда имел свое аргументированное мнение и позицию и никогда ею, не торговал, не разменивал. Он мог нравиться или не нравиться кому-то, но никого не оставлял равнодушным после общения. Человек, который понял смысл, цену жизни, любил её бесконечно, хотя для него это была очень тяжёлая борьба на пределе человеческих возможностей. Никогда не унывал и постоянно строил и реализовывал свои планы и проекты... Человек который ценил и держал свое слово, не взирая на перипетии жизни. Большой Человек!!!   Помним, уважаем, грустим…</p></div>
-<div class='page' data-page='2'><p>Владимир Мирославович Иванишин – директор (с 2010 по 22г.) ИФ ООО «Рос.Нефть-Бурение»	Сейчас директор «РН Бурение», Башкирия  Октябрьский     сентябрь	2025г.</p><p>С Константином Витальевичем познакомились в 2010г в городе &quot;герое&quot; Усть-Кут. Стояли у истоков становления Иркутского филиала РН-Бурение. За 15 лет много было пройдено - взлеты, падения, споры, отстаивание интересов, но отношения всегда были искренние, партнерские, доверительные. Для меня Костя хороший, надежный, искренний человек способный решить любые задачи, грамотно расставить приоритеты, быть в центре любой компании…</p><p>Ренат Хасанович Акчурин - Директор (с 2022 по настоящее время) ИФ ООО «Рос.Нефть-Бурение»         		Октябрь   2025г.</p></div>
-<div class='page' data-page='3'><p>Доброго дня Вам уважаемые Виталий Гаврилович, Людмила Анатольевна. Мне очень повезло в жизни познакомится и дальнейшем пройти вместе с вашим сыном Константином по работе, по жизни. Огромное Вам спасибо за сына, специалиста своего дела, товарища и Друга ( с большой буквой). Константин навсегда останется в наших сердцах , Еще раз спасибо Вам за сына, здоровья Вам и долгих лет жизни. 		       Рафаил Ульфатович Сираев Гл. инженер (с 2010 по 18г.) «РН-Бурение»	   г. Набережные Челны	  	октябрь 2025г.</p><p>Я благодарен судьбе, что мне на жизненном пути повстречался прекрасный человек Константин Басов. Пусть светлая память о Косте навсегда останется с нами!      	            Игорь Бурмистров	(Зам. директора по производству)			сентябрь 2025г.</p><p>Коллеги по работе и друзья Константина.</p><p>Игорь                  Олег                   Мирон</p><p>Честь и хвала родителям, воспитавшим такого сына. Константин Витальевич надёжный друг и товарищ, всегда готов прийти на помощь. Его оптимизма и жизнерадостности будет нам не хватать...Он навсегда в наших сердцах.       Олег Заика (Зам директора по режиму)</p></div>
-<div class='page' data-page='4'><p>С Костей познакомился в 2010 году. Вместе ездили на буровые: он- гл. энергетик, я - гл. механик. С первых дней общения Костя стал для меня другом, а немного позже, родным человеком. Часто ходили друг к другу в гости, постоянно общались. Костя строил много разных планов на будущее. Он был искренним, честным человеком, всегда приходил на помощь, делал это, от чистого сердца. Держал слово, мог разрулить любую ситуацию: производственную, кадровую, доставку грузов на буровые,- без дорог, расст. 200-500км</p><p>Костя безумно любил свою семью, уважал родителей, родственников и друзей. Всегда приходил им на помощь. Константин остался в нашей памяти Человеком с большой буквы. Вечная память!!!</p><p>Мирон Жидун   ( Гл. механик )    Октябрь  2025г.</p><p>«Добрая память о Вашем сыне, он был украшением Вашего Рода, добрым, разумным, работоспособным. очень терпеливым. «Спивчувае уся моя родына!». (Сочувствуют все мои родственники!) 	  Борис     октябрь 2025 	г. Киев.</p></div>
-<div class='page' data-page='5'><p>С Борисом Онищенко я дружу с 1956г. после поступления в ВУЗ. Мы были в одной группе и жили в одной комнате, в общежитии. Окончили. Борис остался в Киеве, я уехал в Запорожье Мы были интересны друг другу, и дружим до сих пор. В1996г, у сына, обнаружили онкологию. Положили в Запорожскую онко-больницу, прошел почти год, зав. отделением говорит мне, что не знаю, как лечить дальше. Звоню Борису, он говорит: «пусть сын немедленно приезжает, во всем помогу». Лечение было очень тяжелое, облучение, химиотерапия (сложно было купить-достать лекарства). Котя остался жив, но с большой потерей иммунитета. Главное… продолжал жить!</p><p>P. S. Дорогой Борис, твою доброту, отзывчивость и наши чувства благодарности, постараемся передать, нашим внукам!            Виталий   Людмила</p></div>
-<div class='page' data-page='6'><p>Мы познакомились в Китае, Костя и Алена, мой муж и я поселились в одном отеле. С того дня прошло 15 лет, мы стали близкими друзьями, с родственным уклоном. В моей памяти, Константин останется настоящим Мужчиной, отчаянным трудолюбом, а также, любящим сыном и мужем, отличным отцом. У нас было много интересных встреч, наполненных позитивом, легкостью и необыкновенной атмосферой тепла. Никогда не забуду его неподражаемое чувство юмора и мощный интеллект. Его нежное и трепетное отношение к родителям, жене и детям всегда вызывало восхищение. Прощай, друг! Ты был лучшим!			Виталий и Марина Боборыкины.</p><p>Октябрь 2025г.  г. Иркутск</p></div>
-<div class='page' data-page='7'><p>С Костей познакомилась я 12.07.2019г. Он вернулся после командировки из Японии. Заболел в Японии и все время терпел, старался не расслабляться и бодрился. Приехал и сразу отправился в стационар, в реанимацию. Костя тонкий парень, боец. Все закончилось благополучно, состояние стабилизировалось, жизнь продолжалась!  Были надежды, мечты, желания. Костя всегда мечтал, жил, как в последний раз. Никогда не останавливался, не унывал, не жаловался. Только вперед, к мечтам.</p></div>
-<div class='page' data-page='8'><p>Как-то раз Костя мне сказал: «Я так хочу жить, а мое тело не хочет. Почему?» Он с 21 года боролся за свою жизнь. А с 2019г это была борьба стала еще более жестокой, тяжелой и постоянной, Костя светлый, сильный, мужественный человек. Я не видела более таких людей, которые так боролись за свою жизнь, как Костя. Мне всегда хотелось назвать его Костиком, хотелось сделать для него все возможное и не возможное. Такие люди встречаются в жизни… но не всем. С кем бы из врачей, которые соприкасались с Костей, я не разговаривала. Все говорили, что такой силы духа, не встречали людей. Я хочу, чтобы дети, жена и родители знали, Костя всех очень любил и оберегал их покой. Он не хотел расстраивать и пугать родителей, огорчать свою любимую жену, тревожить деток. Он был как в сказке, «стойкий оловянный солдатик». Костик хотел исполнить свою мечту, сходить на яхте из Крыма в Таиланд.  Мы с ним, это путешествие  обсуждали 25 августа 2025 года.  Когда он говорил, то светился, был счастлив, от этой большой и светлой своей мечты! 				Доктор Татьяна Копылова.</p><p>24 сентября 2025 г		г. Иркутск</p></div>
-<div class='page' data-page='9'><p>Костя был человеком, который умел зажигать вокруг себя жизнь. У него всегда рождались новые идеи. Самое ценное в нём — это огромная любовь к семье. Костя очень любил море и парусники. Они были для него источниками сил и радости, именно в море он чувствовал себя по-настоящему счастливым. Для нас он останется светлым, искренним человеком.					Евгения и Василий.</p><p>Сентябрь 2025 г.	  Таиланд 	 г. Хуа-Хин</p><p>P. S.  Совместный небольшой бизнес.</p><p>Моё знакомство с Константином, началось неожиданно! Мне позвонили и предложили выйти в море половить рыбу, с приезжими.
-Рано утром на борт поднялась компания ребят и из них сразу выделялся Костя! Не ростом и комплекцией, а своей невообразимой харизмой и умением очень ненавязчиво поддержать разговор! У нас очень оказалось много общего, особенно в яхтинге!</p><p>Мы с ним несколько раз ещё пересекались в жизни и каждый раз это были душевные и незабываемые встречи!!! Константин останется в моей памяти на всегда!!!</p><p>Капитан яхты &quot;DJUNO III&quot; 	 Антон Нашел	г. Владивосток           сентябрь 2025 г.</p></div>
-<div class='page' data-page='10'><p>Костя смотрел на окружающий мир с какой-то другой стороны, с другого ракурса. С которого не всем это было дано, это делало его незаурядным человеком. Несмотря на то, что занимал руководящую должность, вёл  себя достойно, без надменности, высокомерия. Его отношение к жизни и ситуациям было нестандартным. Он видел и поступал так, как другие бы и не сообразили. Всегда жизнерадостный, не унывающий, веселый.  С далеко идущими планами. Если чем -то увлекался, то погружался в это полностью. Охота, рыбалка, море, яхты. Яхты это была его мечта. Он был влюблен в них и море. Костя всегда был открытым, веселым и правильным мужиком, как он сам говорил: «правильных взглядов».</p><p>Яхтенный капитан Тарас.      Крым.  	 1 октября 2025г.</p></div>
-<div class='page' data-page='11'><p>Мы познакомились с Константином на яхтинге, когда наши дети тренировались на юниорских яхтах. Уже потом я узнал, что Костя сам капитан, сам строит круизную яхту в Крыму. Море Костя любил -  страстно, ходил по морю при каждой возможности. Костя умел зажигать людей своей искренностью, целеустремлённостью, оригинальными идеями. На моих глазах задумал и открыл бизнес в Хуа-Хине. Экскурсии и отдых на тримаране, по реке и морю.</p><p>Душа компании, разносторонних способностей и хороший рассказчик. Я слышал от него, множество весёлых жизненных историй про его насыщенную событиями жизнь.</p><p>Костя умел ценить еду, сам очень хорошо готовил, предпочитал простую вкусную кухню. Я очень любил, в его приготовлении, шашлыки. Я рад что несколько лет общался с Костей, буду его часто вспоминать.</p><p>Яхтсмен - шкипер Евгений     17 сентябрь 2025г г.            г.Хуа-Хин</p><p>Ты не ушёл, ты с нами рядом,</p><p>Хоть разделили нас миры.</p><p>Скользим по фото грустным взглядом,</p><p>Где годы были так добры.</p><p>Твоя улыбка не померкла,</p><p>И тот же озорной запал.</p><p>Судьба свой приговор сказала,</p><p>Но образ твой светлее стал.</p></div>
-<div class='page' data-page='12'><p>Иркутск, Таиланд, мечта о море,</p><p>Что согревала нас с тобой.</p><p>Мы помним всё, забыв о горе,</p><p>И слышим голос твой живой.</p><p>Андрей (муж подруги Алены) 	октябрь 2025г 	г. Иркутск</p></div>
-<div class='page' data-page='13'><p>По древним летописям, в 972г. возвращался, из военного византийского похода, с богатой добычей, руський, великий князь Святослав. Гонцы сообщили, что Киев осадили печенеги. Оставив армию, он с отрядом, поспешил на помощь столице. Византийцы сообщили печенегам, что князь без армии. Святослав достиг о.Хортица и остановился на ночлег.  Печенеги нападают, гибнет дружина, гибнет и Великий князь Святослав Игоревич, Печенежский хан Куря, из черепа Святослава, делает кубок для пития. В 2011г. возле этой скалы о.Хортица, случайно, рыбак на спининг, вытаскивает меч, который мог князю принадлежать … Расстояние от этой скалы, до музея «Запорожское казачество» 300-400м.                                                                                                                                         С 14 века начинается заселение казаками нижнего Поднепровья. От Днепровских порогов до устья Днепра (Запорожская и Херсонская обл.) Край был необыкновенно богат рыбой, птицей, зверем и пастбищами. В начале 16 века казаки создают государство, вторую казацкую Республику- Войско Запорожское Низовое. ЕЖЕГОДНО, избирается Кошевой атаман и всё руководство, вплоть до Епископа. Армия опирается на передовой опыт европейских и малоазиатских армий и даже скифов. Девиз Республики «Воля (Свобода), Ривнисть, Братерство».  Казаки обожали юмор, оптимизм, шутки. Человек приходил на Сичь, чтобы стать казаком-побратымом. Ему давали прозвище: щуплому и низкорослому-«Вэлэтэнь», медлительному -«Черепаха», Легкоступ, Сывокинь, Кулиш, Жуйборода и т. д.</p></div>
-<div class='page' data-page='14'><p>В третьем классе, Котя после плавания в бассейне, часто ходил в музей «Запорожское казачество» на о.Хортица  (0,8-1км). присоеденялся к группе посетителей и слушал экскурсовода. Читал художественную литературу о запорожских казаках. В 4 и 5 классе, когда классы его школы ходили в музей, он был их экскурсоводом.                 Котя, очень был горд, своей ролью!</p></div>
-<div class='page' data-page='15'><p>С 15-го века на территории города Запорожье селились казаки, возникали поселения:  Павлокичкас, далее ниже по Днепру- Вознесеновка, в устье реки Молочной, впадающая в Днепр, были построены зимовники для казаков. В 1769-70г.войска и переселенцы из России, зимовники разобрали и построили стены Александровской крепости. В1921г, переименовали, г. Александровск в г. Запорожье. В конце XX века, в Запорожье: проживало, около 800 тыс. жителей, 25 крупных промышленных предприятий и более 200 государственных средних и мелких, 6 ВУЗов, 9 научных центров, 10 Дворцов культуры, 9 театров, 20 библиотек, 33 лечебных учреждения, многочисленные спортивные сооружения, где готовились призёры и чемпионы Европы, Мира и Олимпийских игр.        Запорожье являлся одним из наиболее крупных административных, индустриальных и культурных центров Украины.</p></div>
-<div class='page' data-page='16'><p>В этом городе, в 1969-м году Виталий и Людмила создали семью.  В 1970 году родилась дочь, Светлана, а в 1975-м Котя-Константин. Это были желанные, рождённые в любви дети. Подрастали дети, много читали, слушали записанные сказки на пластинках. С 6 лет Котя, был самостоятельным, рассудительным, старался быть Мужчиной. Уже умел хорошо плавать и нырять. В 7-8лет, зимой плетут с другом Димой, небольшие сетки, а с весны, ловят на них верховодку. Мама жарит рыбу и приговаривает ах ты мой добытчик. Котя очень горд! От Днепра мы жили 200-250м. С 10 лет много читает книг. В 14лет прочитал все тома Джека Лондона, далее увлекся писателями- фантастами, Азимовым, Кларком…</p></div>
-<div class='page' data-page='17'><p>В нашей семье, настольными книгами были: «12 стульев», «Золотой телёнок» и «Бравый солдат Швейк», дети росли с пониманием шуток и юмора.      С 6 лет Котя пошёл в школу.  Но между ним и учителями не    было взаимопонимания. Закончил восемь классов и пошёл в техническое училище, окончил, стал электриком. С 14 лет, работал в кооперативе, прокладывал в помещениях телефонные провода. Окончил ГПТУ и с 1981г, работал в ПЭО «Днепроэнерго»- в службе, релейная защита и автоматика на заводских подстанциях. На берегу Чёрного моря, в поселке Семидворье, построили базу отдыха, два летних месяца пионерлагерь. Костина мама работает в Днепроэнерго с 81-го года а папа с 90-го года, поэтому сын с восьми лет ежегодно отдыхает в пионерлагере. Поступил на работу в Днепроэнерго, ездит практически ежегодно, то в качестве отдыхающую, то работает электриком. Когда не хватает денег, он закупал мясо, делал шашлыки и продавал отдыхающим.  В подростковом возрасте Света и Котя, между собой, редко ссорились. Став взрослыми, решили создать совместный бизнес. На берегу Азовского моря, в селе Строгоновка, купили участок земли, построили одноэтажный жилой дом, гостиницу на 20 мест. На первом этаже парная, продуктовый магазинчик и маленькое кафе. Закончилась стройка 2005-м году, бизнес приносил доход… В 2000-м году уехал в Ноябрьск, где успешно работал по специальности.  В 2010г. переехал в Иркутск, поступил на работу, в ООО «РН Бурение», гл. энергетиком, а с 2018г. по 25- год, зам. директора.</p></div>
-<div class='page' data-page='18'><p>В 21год (1996г.), у Кости обнаружили онкологию, периодическое лечение, которое продолжалось всю его жизнь. Иммунитет почти потерян, болезни цепляются, только ковид-19, 3 раза. Но он сосредоточил свой фокус не на болезнях, а на ЖИЗНИ. Его девиз: «Делай, что должно, и будь что будет»! Своей он жизнью доказал, что несмотря на тяжелую, коварную и долгую болезнь, можно бороться за жизнь: волей, оптимизмом, юмором и добротой. Костя окончил два вечерних ВУЗа в Новосибирске и в Иркутске, по специальности энергетика и экономика. Постоянно учился на разных курсах в России, США, Японии…изучал новшества не только своей профессии, но и пограничные. В последние 2 года, увлекся наукой- конфликтологией, старался улучшить отношения между людьми. Окружающих его людей, постоянно заряжал хорошим настроением, шутками, юмором. Можно сказать, был человек - Праздник. Дружбу, Друзей высоко ценил. Постоянно заботился о семье, родителях, родственниках, не только своих, но и жены. Костя очень любил семью, о дочке Валечке говорил: «Это моя гордость, надежда моя, бесконечная любовь, она свет в моей душе; закончит ВУЗ и станет адвокатом. А Юра, станет настоящим Мужчиной, окончит ВУЗ по специальности инженер- конструктор.  Желаю Вам, как капитану корабля, выдерживать свой курс, чтобы не судьба руководила, а Вы руководил своей судьбой…».        Пожелаем его детям, пусть, по возможности, сбудутся Костины светлые мечты!!!</p></div>
-<div class='page' data-page='19'><p>Письма написал Котя, перед вылетом в Москву, предстояла операция на сердце.</p><p>Здравствуй Мама. Время летит и как-то него не хватает на главное, поговорить, пообщаться, высказать все что я думаю. Я очень благодарен тебе за ту любовь и заботу которой ты окружала меня всю жизнь. Ты самая лучшая мама, на земле и я счастлив, что ты досталась именно мне. Для меня нет ближе человека чем ты.  Хочу, чтобы ты это знала и ощущала. Я бываю не справедлив к тебе, моя реакция на твои слова зачастую не адекватна, а порой и груба, прости меня пожалуйста, это все мое эго и желание жить в идеальном мире, а мир не идеален. Я хотел сделать идеальными близких мне людей, а это невозможно и неправильно. Никого нельзя изменить, менять нужно, себя и я медленно к этому двигаюсь. Мне кажется я на верном пути. Спасибо тебе за всё, за то, что ты у меня есть, с безграничной  любовью,  и уважением.</p><p>Котя     23 июня 2024г.     г. Иркутск</p><p>Здравствуй Папа. Мир очень стремителен, и мы бежим куда-то, не обращая внимание на важное. Я хочу поблагодарить тебя за все, что ты для меня сделал.</p></div>
-<div class='page' data-page='20'><p>Все что я умею делать руками это все благодаря тебе, то что я не люблю ручной труд, это тоже благодаря тебе и слава богу, что это так. Я нехорошие слова говорил тебе, спорил пытался рассказать, как тебе жить и как правильно жить, но это совершенно не мое дело и сын не имеет права поучать отца, а тем более грубить. Я перепутал наши жизненные роли отца и сына и мне стыдно за грубость, которое ты от меня иногда получал. Подспудно я всегда это понимал, но не мог с собой совладать, я зачем-то решил, что буду тебя поучать, спорить с тобой и доказывать, что то, каюсь, я не должен был себя так вести.     За это, прошу у тебя прощение!  На самом деле ты всегда был для меня не превзойденный авторитет. Ты, человек, который знает и умеет все. Не смотря на разную специфику, я не знаю и не умею многое из того, что умеешь и знаешь ты. У тебя были успехи в спорте, мне же всегда не хватало усердия и терпения… ибо это труд огромный, а лень сильна… Ты был предпринимателем, кооператив открыл, когда никто и не представлял, что такое бизнес.  Были финансовые успехи, и ты бы добился в этом больше, но твоя природная честность не позволила тебе кривить душой, скрывать налоги и прочее. В трудные девяностые мы жили лучше других, благодаря тому, что ты крутился как умел и это приносило плоды. Я вырос в любви отца и матери, это очень важно. Я теперь могу эту любовь, передавать своим детям и возвращать ее Вам.  Спасибо за всё, люблю, уважаю, дай бог тебе здоровья, и долголетия!			Котя   		23 июня 2024г.</p></div>
-<div class='page' data-page='21'><p>Приехав в Ноябрьск, ловил налима, собирал грибы, играл в биллиард… Переехав в Иркутске увлекся охотой. Купил карабин, потренировался в тире, убил:  косулю, кабана, медведя, первая пуля, прямо в сердце попала. А потом, сказал: «нет, не моё это», и с охотой завязал.</p><p>С начала 21 века, у меня в саду стояла беседка- яхта (8м длинной) Позже, я купил старый катамаран, Котя парус и корпусные баллоны. Мы стали ходить по Азовскому морю. Видимо тогда, у сына стал появляться интерес к яхтам и морю.</p><p>рараарарарарарарараарарарарарарарарарвапьбв</p><p>Бью шампанское с одноклассниками, открываю яхту – беседку. Катамаран спускаем в море</p></div>
-<div class='page' data-page='22'><p>Приезжая из Ноябрьска, заезжал в Запорожье к родителям, а потом в Крым на море. Переехал в Иркутск, женился, уже теперь вместе с женой, заезжал в Запорожье, потом в Крым. Здесь он арендовал яхту и плавал вдоль крымского побережья. Любовь к Крыму, Чёрному морю и яхтам привела к тому, что вместе с крымчанином Тарасом (г. Керчь), решили построить крейсерскую яхту для дальних путешествий. Яхту решили назвать «Арго», в честь древних греков. Которые жили 2,5 тыс. лет назад и поплыли за мечтой из Эгейского в Чёрное море. Преодолели сотни миль и много трудностей, грозящих их жизням. Достигли своей цели-мечты, добыли «Золотое руно» и вернулись домой в г. Волос.                             Яхта «Арго» построена, но Костя ушел из жизни, он не успел осуществить свою голубую мечту, путешествие из Крыма в Таиланд!</p><p>Семья:  Алёна,            Родители: Людмила(80лет)           Валя -11лет, Юра-6лет                   Виталий (87лет)</p></div>
-<div class='page' data-page='23'><p>В 1996, 2007, 2019г. возврат онкологии, а с ней химиотерапия, после неё, очень тяжелое состояние организма; и в четвертый раз 2025г. возврат, организм химиотерапию не выдерживает, и Котя- Константин «уходит» навсегда,</p><p>9 сентября 2025г.</p><p>Ему исполнилось 50 лет. был в расцвете сил, творческих и интеллектуальных, не успел осуществить многих своих планов!</p><p>Как и завещал Константин, его прах развеян над Сиамским заливом в Таиланде.</p><p>Пока живы Родители, Семья, Родственники, Сотрудники, Друзья, Товарищи по яхтингу, и Все те, которые его близко знали… Котя, Костик, Костя, Константин… будет всегда жив в наших воспоминаниях и наших сердцах!</p><p>Когда «уходят родители на небо», это драма, но бессмертия нет. Когда «уходят» дети, это трагедия, душевная рана, не заживающая никогда…</p><p>Виталий и Людмила Басовы</p></div>
-    </div>
-  </div>
+<span lang=RU style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#222222'><br clear=all style='page-break-before:auto'>
+</span>
 
-  <div class="controls">
-    <div style="display:flex;gap:8px;align-items:center;">
-      <button class="btn" id="prevBtn" aria-label="Предложняя страница">← Назад</button>
-      <button class="btn" id="nextBtn" aria-label="Следующая страница">Вперёд →</button>
-    </div>
-    <div style="display:flex;align-items:center;gap:10px;">
-      <div class="counter" id="counter">1 / 23</div>
-      <div class="meta">Нажмите пробел для следующей, Esc — вернуть сплэш</div>
-    </div>
-  </div>
-</main>
+<div class=WordSection2>
 
-<script>
-// Basic pagination logic
-const pages = Array.from(document.querySelectorAll('.page'));
-let idx = 0;
-function show(i, opts={}){ idx = Math.max(0, Math.min(i, pages.length-1)); pages.forEach((p,pi)=>{ p.classList.remove('active','prev'); if(pi===idx){ p.classList.add('active'); p.style.zIndex=50 } else if(pi===idx-1){ p.classList.add('prev'); p.style.zIndex=30 } else { p.style.zIndex=10 } }); document.getElementById('counter').textContent = (idx+1) + " / " + pages.length; }
-// init
-show(0);
-// controls
-document.getElementById('nextBtn').addEventListener('click',()=>show(idx+1));
-document.getElementById('prevBtn').addEventListener('click',()=>show(idx-1));
-// keyboard and splash
-const splash = document.getElementById('splash');
-function hideSplash(){ splash.classList.add('hidden'); splash.setAttribute('aria-hidden','true'); }
-function showSplash(){ splash.classList.remove('hidden'); splash.setAttribute('aria-hidden','false'); }
-document.addEventListener('keydown', (e)=>{
-  if(document.activeElement && ['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) return;
-  if(splash && !splash.classList.contains('hidden')){ hideSplash(); return; }
-  if(e.key === 'ArrowRight' || e.key === 'PageDown' || e.code==='Space'){ e.preventDefault(); show(idx+1); }
-  if(e.key === 'ArrowLeft' || e.key === 'PageUp') show(idx-1);
-  if(e.key === 'Escape') showSplash();
-});
-splash.addEventListener('click', hideSplash);
-// simple swipe
-let startX=0, endX=0;
-const slider = document.getElementById('slider');
-slider.addEventListener('touchstart', e=> startX = e.touches[0].clientX);
-slider.addEventListener('touchend', e=>{ endX = e.changedTouches[0].clientX; if(startX - endX > 40) show(idx+1); if(endX - startX > 40) show(idx-1); });
-// click turn: click right half to next, left half to prev
-slider.addEventListener('click', e=>{
-  const r = slider.getBoundingClientRect();
-  if(e.clientX > r.left + r.width/2) show(idx+1); else show(idx-1);
-});
-</script>
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Ты
+не ушёл, ты с нами рядом,</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Хоть
+разделили нас миры.</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-2.4pt;margin-bottom:
+0cm;margin-left:0cm;line-height:normal;background:white'><b><span lang=RU
+style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Скользим
+по фото грустным взглядом,</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Где
+годы были так добры.</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Твоя
+улыбка не померкла,</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>И
+тот же озорной запал.</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Судьба
+свой приговор сказала,</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Но
+образ твой светлее стал.</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Иркутск,
+Таиланд, мечта о море,</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Что
+согревала нас с тобой.</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>Мы
+помним всё, забыв о горе,</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;background:white'><b><span
+lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;color:#222222'>И
+слышим голос твой живой.</span></b></p>
+
+</div>
+
+<b><span lang=RU style='font-size:10.0pt;font-family:"Times New Roman",serif;
+color:#222222'><br clear=all style='page-break-before:auto'>
+</span></b>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:106.2pt;text-indent:35.4pt;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Андрей
+(муж подруги Алены)     октябрь 2025г         г. Иркутск</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-indent:35.4pt;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=690
+ style='margin-left:-7.35pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=198 valign=top style='width:148.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-5.2pt;text-align:center;line-height:normal'><span
+  lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'><img
+  width=149 height=101 id="Рисунок 29"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image012.png"></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=RU>ГЭС, 972 г. Гибель Святослава</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-5.05pt;text-align:center;line-height:normal'><span
+  lang=RU><img width=113 height=104 id="Рисунок 16"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image013.jpg"></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=RU>Запорожские  казаки</span></p>
+  </td>
+  <td width=166 valign=top style='width:124.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-9.0pt;text-align:center;line-height:normal'><span
+  lang=RU><img width=127 height=104 id="Рисунок 17"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image014.png"></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=RU>Запорожская Сичь </span></p>
+  </td>
+  <td width=175 valign=top style='width:131.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:14.55pt;
+  margin-bottom:0cm;margin-left:-5.45pt;text-align:center;line-height:normal'><span
+  lang=RU><img width=128 height=104 id="Рисунок 8"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image015.jpg"></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=RU>Атака казаков</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Bahnschrift Light Condensed",sans-serif;
+color:#222222'>По древним летописям, в 972г. возвращался, из военного
+византийского похода, с богатой добычей, руський, великий князь Святослав.
+Гонцы сообщили, что Киев осадили печенеги. Оставив армию, он с отрядом,
+поспешил на помощь столице. Византийцы сообщили печенегам, что князь без армии.
+Святослав достиг о.Хортица и остановился на ночлег.  Печенеги нападают, гибнет
+дружина, гибнет и Великий князь Святослав Игоревич, Печенежский хан Куря, из
+черепа Святослава, делает кубок для пития. В 2011г. возле этой скалы о.Хортица,
+случайно, рыбак на спининг, вытаскивает меч, который мог князю принадлежать …
+Расстояние от этой скалы, до музея «Запорожское казачество» 300-400м.                                                                                                                       
+                 С 14 века начинается заселение казаками нижнего Поднепровья.
+От Днепровских порогов до устья Днепра (Запорожская и Херсонская обл.) Край был
+необыкновенно богат рыбой, </span><span lang=RU style='font-size:12.0pt;
+color:#222222'>птицей</span><span lang=RU style='font-size:12.0pt;font-family:
+"Arial Rounded MT Bold",sans-serif;color:#222222'>, </span><span lang=RU
+style='font-size:12.0pt;color:#222222'>зверем</span><span lang=RU
+style='font-size:12.0pt;font-family:"Arial Rounded MT Bold",sans-serif;
+color:#222222'> </span><span lang=RU style='font-size:12.0pt;color:#222222'>и</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial Rounded MT Bold",sans-serif;
+color:#222222'> </span><span lang=RU style='font-size:12.0pt;color:#222222'>пастбищами</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial Rounded MT Bold",sans-serif;
+color:#222222'>. </span><span lang=RU style='font-size:12.0pt;color:#222222'>В</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial Rounded MT Bold",sans-serif;
+color:#222222'> </span><span lang=RU style='font-size:12.0pt;color:#222222'>начале</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial Rounded MT Bold",sans-serif;
+color:#222222'> 16 </span><span lang=RU style='font-size:12.0pt;color:#222222'>века</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial Rounded MT Bold",sans-serif;
+color:#222222'> </span><span lang=RU style='font-size:12.0pt;color:#222222'>казаки</span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial Rounded MT Bold",sans-serif;
+color:#222222'> </span><span lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'>создают</span><span lang=RU style='font-size:12.0pt;font-family:
+"Bahnschrift",sans-serif;color:#222222'> </span><span lang=RU style='font-size:
+12.0pt;font-family:"Bahnschrift",sans-serif;color:#222222'>государство</span><span
+lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'>, </span><span lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'>вторую</span><span lang=RU style='font-size:12.0pt;font-family:
+"Bahnschrift",sans-serif;color:#222222'> </span><span lang=RU style='font-size:
+12.0pt;font-family:"Bahnschrift",sans-serif;color:#222222'>казацкую</span><span
+lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'> </span><span lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'>Республику</span><span lang=RU style='font-size:12.0pt;
+font-family:"Bahnschrift",sans-serif;color:#222222'>- </span><span lang=RU
+style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;color:#222222'>Войско</span><span
+lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'> </span><span lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'>Запорожское</span><span lang=RU style='font-size:12.0pt;
+font-family:"Bahnschrift",sans-serif;color:#222222'> </span><span lang=RU
+style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;color:#222222'>Низовое</span><span
+lang=RU style='font-size:12.0pt;font-family:"Bahnschrift",sans-serif;
+color:#222222'>. </span><span lang=RU style='font-size:12.0pt;font-family:"Bahnschrift Light Condensed",sans-serif;
+color:#222222'>ЕЖЕГОДНО, избирается Кошевой атаман и всё руководство, вплоть до
+Епископа. Армия опирается на передовой опыт европейских и малоазиатских армий и
+даже скифов. Девиз Республики «Воля (Свобода), Ривнисть, Братерство».  Казаки
+обожали юмор, оптимизм, шутки. Человек приходил на Сичь, чтобы стать
+казаком-побратымом. Ему давали прозвище: щуплому и низкорослому-«Вэлэтэнь», медлительному
+-«Черепаха», Легкоступ, Сывокинь, Кулиш, Жуйборода и т. д.</span><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>                                 
+</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><b><i><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>В
+третьем классе, Котя после плавания в бассейне, часто ходил в музей «Запорожское
+казачество» на о.Хортица  (0,8-1км). присоеденялся к группе посетителей и
+слушал экскурсовода. Читал художественную литературу о запорожских казаках. В 4
+и 5 классе, когда классы его школы ходили в музей, он был их экскурсоводом.    
+            Котя, очень был горд, своей ролью!</span></i></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=690
+ style='width:517.4pt;margin-left:-.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=217 valign=top style='width:162.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-5.4pt;text-align:center;line-height:normal'><span
+  lang=RU><img width=157 height=101 id="Рисунок 20"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image016.jpg" alt="днепро ГЭС"></span></p>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-5.4pt;text-align:center;line-height:normal'><span
+  lang=RU>ДНЕПРОГЭС</span><span lang=RU>  </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-5.65pt;text-align:center;line-height:normal'><span
+  lang=RU><img width=131 height=99 id="Рисунок 22"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image017.jpg" alt=проспект></span></p>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-5.65pt;text-align:center;line-height:normal'><span
+  lang=RU>СОБОРНЫЙ ПРОСПЕКТ</span></p>
+  </td>
+  <td width=121 valign=top style='width:91.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-5.35pt;text-align:center;line-height:normal'><span
+  lang=RU><img width=79 height=95 id="Рисунок 21"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image018.png"></span><span
+  lang=RU>ЗАПОРОЖСТАЛЬ Плавка металла</span></p>
+  </td>
+  <td width=153 valign=top style='width:114.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-4.05pt;text-align:center;line-height:normal'><span
+  lang=RU><img width=106 height=106 id="Рисунок 10"
+  src="Эпитафия%20Константину%20-%20Личности.fld/image019.png"></span><span
+  lang=RU>   ЗАЗ     КОНВЕЙЕР</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNoSpacing style='margin-top:12.0pt;text-align:justify'><span
+lang=RU style='font-size:12.0pt;font-family:"Bahnschrift Light Condensed",sans-serif;
+color:#222222'>С 15-го века на территории города Запорожье селились казаки,
+возникали поселения:  Павлокичкас, далее ниже по Днепру- Вознесеновка, в устье
+реки Молочной, впадающая в Днепр, были построены зимовники для казаков. В 1769-70г.войска
+и переселенцы из России, зимовники разобрали и построили стены Александровской
+крепости. В1921г, переименовали, г. Александровск в г. Запорожье. В конце XX
+века, в Запорожье: проживало, около 800 тыс. жителей, 25 крупных промышленных
+предприятий и более 200 государственных средних и мелких, 6 ВУЗов, 9 научных
+центров, 10 Дворцов культуры, 9 театров, 20 библиотек, 33 лечебных учреждения,
+многочисленные спортивные сооружения, где готовились призёры и чемпионы Европы,
+Мира и Олимпийских игр</span><b><span lang=RU style='font-size:13.0pt;
+font-family:"Arial",sans-serif;color:black'>.</span></b><b><span lang=RU
+style='font-size:13.0pt;font-family:"Arial",sans-serif;color:black'>        </span></b><span
+class=Heading2Char><b><span lang=RU style='font-size:13.0pt;font-family:"Arial",sans-serif;
+color:black'>Запорожье являлся одним из наиболее крупных административных,
+индустриальных и культурных центров Украины</span></b></span><span
+class=Heading2Char><span lang=RU style='font-size:13.0pt'>.</span></span><span
+lang=RU>              </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><img
+width=236 height=237
+src="Эпитафия%20Константину%20-%20Личности.fld/image020.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>В этом городе, в 1969-м году Виталий и Людмила создали семью.  В
+1970 году родилась дочь, Светлана, а в 1975-м Котя-Константин. Это были желанные,
+рождённые в любви дети. Подрастали дети, много читали, слушали записанные
+сказки на пластинках. С 6 лет Котя, был самостоятельным, рассудительным,
+старался быть Мужчиной. Уже умел хорошо плавать и нырять. В 7-8лет, зимой
+плетут с другом Димой, небольшие сетки, а с весны, ловят на них верховодку.
+Мама жарит рыбу и приговаривает ах ты мой добытчик. Котя очень горд! От Днепра
+мы жили 200-250м. С 10 лет много читает книг. В 14лет прочитал все тома Джека
+Лондона, далее увлекся писателями- фантастами, Азимовым, Кларком… </span></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><span lang=RU
+style='font-family:"Arial",sans-serif;color:#222222'> </span><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>В нашей
+семье, настольными книгами были: «12 стульев», «Золотой телёнок» и «Бравый
+солдат Швейк», дети росли с пониманием шуток и юмора.      С 6 лет Котя пошёл в
+школу.  Но между ним и учителями не    было взаимопонимания. Закончил восемь
+классов и пошёл в техническое училище, окончил, стал электриком. С 14 лет, работал
+в кооперативе, прокладывал в помещениях телефонные провода. Окончил ГПТУ и с
+1981г, работал в ПЭО «Днепроэнерго»- в службе, релейная защита и автоматика на
+заводских подстанциях.</span><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222;background:white'> На берегу Чёрного моря, в
+поселке Семидворье, построили базу отдыха, два летних месяца пионерлагерь.
+Костина мама работает в Днепроэнерго с 81-го года а папа с 90-го года, поэтому
+сын с восьми лет ежегодно отдыхает в пионерлагере. Поступил на работу в
+Днепроэнерго, ездит практически ежегодно, то в качестве отдыхающую, то работает
+электриком. Когда не хватает денег, он закупал мясо, делал шашлыки и продавал
+отдыхающим. </span><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'> В подростковом возрасте Света и Котя, между собой, редко
+ссорились. Став взрослыми, решили создать совместный бизнес. На берегу
+Азовского моря, в селе Строгоновка, купили участок земли, построили одноэтажный
+жилой дом, гостиницу на 20 мест. На первом этаже парная, продуктовый магазинчик
+и маленькое кафе. Закончилась стройка 2005-м году, бизнес приносил доход… В 2000-м
+году уехал в Ноябрьск, где успешно работал по специальности.  В 2010г. переехал
+в Иркутск, поступил на работу, в ООО «РН Бурение», гл. энергетиком, а с 2018г.
+по 25- год, зам. директора.</span></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>В 21год
+(1996г.), у Кости обнаружили онкологию, периодическое лечение, которое
+продолжалось всю его жизнь. Иммунитет почти потерян, болезни цепляются, только
+ковид-19, 3 раза. Но он сосредоточил свой фокус не на болезнях, а на </span><span
+class=Heading1Char><b><span lang=RU style='font-size:16.0pt;color:#1303E1'>ЖИЗНИ</span></b></span><span
+class=Heading1Char><span lang=RU style='font-size:16.0pt'>.</span></span><span
+lang=RU style='font-family:"Arial",sans-serif;color:#222222'> </span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Его
+девиз: «Делай, что должно, и будь что будет»! Своей он жизнью доказал, что
+несмотря на тяжелую, коварную и долгую болезнь, можно бороться за жизнь: волей,
+оптимизмом, юмором и добротой. Костя окончил два вечерних ВУЗа в Новосибирске и
+в Иркутске, по специальности энергетика и экономика. Постоянно учился на разных
+курсах в России, США, Японии…изучал новшества не только своей профессии, но и
+пограничные. В последние 2 года, увлекся наукой- конфликтологией, старался
+улучшить отношения между людьми. Окружающих его людей, постоянно заряжал
+хорошим настроением, шутками, юмором. Можно сказать, был человек - Праздник. Дружбу,
+Друзей высоко ценил. Постоянно заботился о семье, родителях, родственниках, не
+только своих, но и жены. Костя очень любил семью, о дочке Валечке говорил: «Это
+моя гордость, надежда моя, бесконечная любовь, она свет в моей душе; закончит
+ВУЗ и станет адвокатом. А Юра, станет настоящим Мужчиной, окончит ВУЗ по специальности
+инженер- конструктор.  Желаю Вам, как капитану корабля, выдерживать свой курс,
+чтобы не судьба руководила, а Вы руководил своей судьбой…».   </span><span
+lang=RU style='font-family:"Arial",sans-serif;color:#222222'>     </span><span
+class=Heading1Char><b><span lang=RU style='font-size:16.0pt;color:#1303E1'>Пожелаем
+его детям, пусть, по</span></b></span><b><span lang=RU style='font-family:"Arial",sans-serif;
+color:#1303E1'> </span></b><span class=Heading1Char><b><span lang=RU
+style='font-size:16.0pt;color:#1303E1'>возможности, сбудутся Костины светлые
+мечты!!!</span></b></span><span class=Heading1Char><span lang=RU
+style='font-size:16.0pt'> </span></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><b><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>                                                                                                                                                          
+Письма написал Котя, перед вылетом в Москву, предстояла операция на сердце.   </span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><b><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>                  
+     </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'>Здравствуй Мама. Время летит и как-то него не
+хватает на главное, поговорить, пообщаться, высказать все что я думаю. Я очень
+благодарен тебе за ту любовь и заботу которой ты окружала меня всю жизнь. Ты
+самая лучшая мама, на земле и я счастлив, что ты досталась именно мне. Для меня
+нет ближе человека чем ты.  Хочу, чтобы ты это знала и ощущала. Я бываю не
+справедлив к тебе, моя реакция на твои слова зачастую не адекватна, а порой и
+груба, <b>прости меня пожалуйста</b>, это все мое эго и желание жить в идеальном
+мире, а мир не идеален. Я хотел сделать идеальными близких мне людей, а это
+невозможно и неправильно. Никого нельзя изменить, менять нужно, себя и я
+медленно к этому двигаюсь. Мне кажется я на верном пути. <b>Спасибо</b> <b>тебе
+за всё, за то, что ты у меня есть, с безграничной  любовью,  и уважением.</b> </span></p>
+
+<p class=MsoNormal style='margin-left:212.4pt;text-align:justify;text-indent:
+35.4pt;line-height:normal;background:white'><span lang=RU style='font-size:
+12.0pt;font-family:"Arial",sans-serif;color:#222222'>Котя     23 июня
+2024г.     г. Иркутск</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'>Здравствуй Папа. Мир очень стремителен, и мы
+бежим куда-то, не обращая внимание на важное. Я хочу поблагодарить тебя за все,
+что ты для меня сделал.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'>Все что я умею делать руками это все
+благодаря тебе, то что я не люблю ручной труд, это тоже благодаря тебе и слава
+богу, что это так. Я нехорошие слова говорил тебе, спорил пытался рассказать,
+как тебе жить и как правильно жить, но это совершенно не мое дело и сын не
+имеет права поучать отца, а тем более грубить. Я перепутал наши жизненные роли
+отца и сына и мне стыдно за грубость, которое ты от меня иногда получал.
+Подспудно я всегда это понимал, но не мог с собой совладать, я зачем-то решил,
+что буду тебя поучать, спорить с тобой и доказывать, что то, каюсь, я не должен
+был себя так вести.     <b>За это, прошу у тебя прощение</b>!  На самом деле ты
+всегда был для меня не превзойденный авторитет. Ты, человек, который знает и
+умеет все. Не смотря на разную специфику, я не знаю и не умею многое из того,
+что умеешь и знаешь ты. У тебя были успехи в спорте, мне же всегда не хватало
+усердия и терпения… ибо это труд огромный, а лень сильна… Ты был
+предпринимателем, кооператив открыл, когда никто и не представлял, что такое
+бизнес.  Были финансовые успехи, и ты бы добился в этом больше, но твоя
+природная честность не позволила тебе кривить душой, скрывать налоги и прочее.
+В трудные </span><img width=118 height=132
+src="Эпитафия%20Константину%20-%20Личности.fld/image021.png" align=left
+hspace=12><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'>девяностые мы жили лучше других, благодаря тому, что ты крутился
+как умел и это приносило плоды. Я вырос в любви отца и матери, это очень важно.
+Я теперь могу эту любовь, передавать своим детям и возвращать ее Вам.  <b>Спасибо
+за всё, люблю, уважаю, дай бог тебе здоровья, и долголетия!                                </b>Котя  
+                        23 июня 2024г.     </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;text-align:justify;line-height:normal;background:white'><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>Приехав
+в Ноябрьск, ловил налима, собирал грибы, играл в биллиард… Переехав в Иркутске
+увлекся охотой. Купил карабин, потренировался в тире, убил:  косулю, кабана,
+медведя, первая пуля, прямо в сердце попала. А потом, сказал: «нет, не моё это»,
+и с охотой завязал. </span></p>
+
+<p class=MsoNormal style='background:white'><span lang=RU style='font-size:
+12.0pt;line-height:107%;font-family:"Arial",sans-serif;color:#222222'>С начала
+21 века, у меня в саду стояла беседка- яхта (8м длинной) Позже, я купил старый
+катамаран, Котя парус и корпусные баллоны. Мы стали ходить по Азовскому морю.
+Видимо тогда, у сына стал появляться интерес к яхтам и морю.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><img width=357 height=137
+src="Эпитафия%20Константину%20-%20Личности.fld/image022.jpg" align=left
+hspace=12><span lang=RU style='font-size:0pt;font-family:"Times New Roman",serif;
+color:black;border:none black 1.0pt;padding:0cm;background:black;layout-grid-mode:
+line'> </span><span lang=RU style='font-size:0pt;font-family:"Times New Roman",serif;
+color:black;border:none black 1.0pt;padding:0cm;background:black;layout-grid-mode:
+line'>     рараарарарарарарараарарарарарарарарарвапьбв</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'> <img width=133 height=137 id="Рисунок 15"
+src="Эпитафия%20Константину%20-%20Личности.fld/image023.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'>Бью шампанское с одноклассниками, открываю
+яхту – беседку. Катамаран спускаем в море</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><img width=236 height=157
+src="Эпитафия%20Константину%20-%20Личности.fld/image024.jpg" align=left
+hspace=12></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><span style='position:relative;
+z-index:251676672'><span style='left:0px;position:absolute;left:317px;
+top:-1318px;width:50px;height:20px'><img width=50 height=20 src=missing.gif></span></span><span
+style='position:relative;z-index:251678720'><span style='left:0px;position:
+absolute;left:425px;top:-1311px;width:43px;height:17px'><img width=43
+height=17 src=missing.gif></span></span><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222;background:white'>Приезжая из
+Ноябрьска, заезжал в Запорожье к родителям, а потом в Крым на море. Переехал в
+Иркутск, женился, уже теперь вместе с женой, заезжал в Запорожье, потом в Крым.
+Здесь он арендовал яхту и плавал вдоль крымского побережья. Любовь к Крыму, Чёрному
+морю и яхтам привела к тому, что вместе с крымчанином Тарасом (г. Керчь),
+решили построить крейсерскую яхту для дальних путешествий. Яхту решили назвать
+«Арго», в честь древних греков. Которые жили 2,5 тыс. лет назад и поплыли за
+мечтой из Эгейского в Чёрное море. Преодолели сотни миль и много трудностей,
+грозящих их жизням. Достигли своей цели-мечты, добыли «Золотое</span><span
+lang=RU style='font-family:"Arial",sans-serif;color:#222222;background:white'>
+руно» и вернулись домой в г. Волос</span><span class=Heading2Char><span
+lang=RU style='font-size:13.0pt'>.                             </span></span><span
+class=Heading3Char><b><span lang=RU style='font-size:16.0pt;color:#1303E1'>Яхта
+«Арго» построена, но Костя ушел из жизни, он не успел осуществить свою голубую
+мечту, путешествие из Крыма в Таиланд!</span></b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><img width=188 height=283
+src="Эпитафия%20Константину%20-%20Личности.fld/image025.jpg" align=left
+hspace=12><img width=162 height=147
+src="Эпитафия%20Константину%20-%20Личности.fld/image026.png" align=left
+hspace=12></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'><img width=150 height=148 id="Рисунок 19"
+src="Эпитафия%20Константину%20-%20Личности.fld/image027.png"></span><span
+lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>  Семья:
+ Алёна,            Родители: Людмила(80лет)           Валя -11лет,
+Юра-6лет                   Виталий (87лет)<b><i>  </i></b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><b><i><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><b><i><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'>В 1996, 2007, 2019г. возврат онкологии,
+а с ней химиотерапия, после неё, очень тяжелое состояние организма; и в
+четвертый раз 2025г. возврат, организм химиотерапию не выдерживает, и Котя- Константин
+«уходит» навсегда, </span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><b><i><span lang=RU style='font-size:16.0pt;
+font-family:"Arial",sans-serif;color:#222222'>                                     9
+сентября 2025г</span></i></b><b><i><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'>.</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><b><i><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><b><i><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'> Ему исполнилось 50 лет. был в расцвете
+сил, творческих и интеллектуальных, не успел осуществить многих своих планов!                           
+</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><b><i><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#222222'> </span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><b><i><span lang=RU style='font-size:12.0pt;
+font-family:"Arial",sans-serif;color:#1303E1'>Как и завещал Константин, его
+прах развеян над Сиамским заливом в Таиланде</span></i></b><b><i><span lang=RU
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#222222'>.</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><img width=211 height=210
+src="Эпитафия%20Константину%20-%20Личности.fld/image028.png" align=left
+hspace=12><b><i><span lang=RU style='font-size:12.0pt;font-family:"Arial",sans-serif;
+color:#222222'> </span></i></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=RU
+style='font-size:16.0pt;line-height:107%'>Пока живы Родители, Семья,
+Родственники, Сотрудники, Друзья, Товарищи по яхтингу, и Все те, которые его
+близко знали… Котя, Костик, Костя, Константин… будет всегда жив в наших
+воспоминаниях и наших сердцах!        </span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><i><span lang=RU
+style='line-height:107%;font-family:"Arial",sans-serif;color:#222222'>Когда
+«уходят родители на небо», это драма, но бессмертия нет. Когда «уходят» дети,
+это трагедия, душевная рана, не заживающая никогда…</span></i></b><b><span
+lang=RU style='font-size:14.0pt;line-height:107%'>                    </span></b></p>
+
+<p class=MsoNormal style='margin-left:283.2pt'><b><span lang=RU
+style='font-size:16.0pt;line-height:107%'>Виталий и Людмила Басовы                                                    
+</span></b><span lang=RU style='font-size:12.0pt;line-height:107%;font-family:
+"Arial",sans-serif;color:#222222'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;text-align:justify;line-height:
+normal;background:white'><span lang=RU style='font-size:12.0pt;font-family:
+"Arial",sans-serif;color:#222222'> </span></p>
+
+</div>
+
 </body>
+
 </html>
